@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:include="common :: head"></div>
+</head>
+<body>
+<div class="container">
+    <h2>Input Liver Disease Data</h2>
+    <form class="form-horizontal" th:object="${genuineData}" th:action="@{/result}" method="post">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Age:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{age}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Gender:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{gender}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Tb:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{tb}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">DB:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{db}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Alkphos:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{alkphos}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Sgpt:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{sgpt}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Sgot:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{sgot}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">tp:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{tp}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Alb:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{alb}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">A/G:</label>
+            <div class="com-sm-10">
+                <input type="text" class="form-control" th:field="*{ag}"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

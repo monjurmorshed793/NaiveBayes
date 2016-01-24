@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Submit Success</title>
+    <meta charset="UTF-8">
+    <div th:include="common :: head"></div>
+</head>
+<body>
+    <div class="container">
+        <h1>Submission Successful!!!!</h1><br>
+        <a th:href="${'/input'}">Input Data Again</a><br>
+        <a th:href="${'/predict'}">Predict Data</a>
+    </div>
+</body>
+</html>
